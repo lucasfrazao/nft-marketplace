@@ -51,6 +51,7 @@ export const DetailsCollection = styled.div`
     height: auto;
 
     font-family: 'Work Sans';
+    font-weight: bold;
     background: none !important;
   }
 

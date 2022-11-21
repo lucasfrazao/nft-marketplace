@@ -1,7 +1,12 @@
+import { Button } from '../../components/Button'
 import { CardCollection } from '../../components/CardCollection'
 import { HeroSection } from '../../components/HeroSection'
 import { PageDefault } from '../../components/PageDefault'
-import { Container, TrendingCollection } from './styles'
+
+import { RocketLaunch } from 'phosphor-react'
+
+import { Container, TrendingCollection, TopCreators } from './styles'
+import { CardArtists } from '../../components/CardArtists'
 
 export function Home() {
   const data = {
@@ -45,6 +50,30 @@ export function Home() {
             />
           </div>
         </TrendingCollection>
+
+        <TopCreators>
+          <header>
+            <div className="text">
+              <h2>Top creators</h2>
+              <span>Checkout Top Rated Creators on the NFT Marketplace</span>
+            </div>
+
+            <Button size="large" variant="outlined">
+              <RocketLaunch size={20} /> View Rankings
+            </Button>
+          </header>
+
+          <div className="artists-cards">
+            <CardArtists />
+            <CardArtists />
+            <CardArtists />
+            <CardArtists />
+            <CardArtists />
+            <CardArtists />
+            <CardArtists />
+            <CardArtists />
+          </div>
+        </TopCreators>
       </Container>
     </PageDefault>
   )

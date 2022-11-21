@@ -28,8 +28,6 @@ export const Container = styled.button<ButtonProps>`
   gap: 0.625rem;
   border-radius: 0.625rem;
 
-  max-width: 12.875rem;
-
   :hover {
     cursor: pointer;
     filter: brightness(0.8);
