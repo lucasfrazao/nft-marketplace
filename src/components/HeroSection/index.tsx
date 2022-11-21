@@ -40,7 +40,7 @@ export function HeroSection() {
         <div className="details">
           <span>Space Walking</span>
 
-          <div className="identify-user">
+          <div className="identify-artist">
             <img
               src="https://images.unsplash.com/photo-1493752603190-08d8b5d1781d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
               alt="avatar user"

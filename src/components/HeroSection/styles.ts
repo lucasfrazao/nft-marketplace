@@ -44,7 +44,7 @@ export const HighlightCard = styled.div`
     border-radius: 0 0 0.625rem 0.625rem;
   }
 
-  .identify-user {
+  .identify-artist {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -52,7 +52,7 @@ export const HighlightCard = styled.div`
     margin-top: 0.625rem;
   }
 
-  .identify-user > img {
+  .identify-artist > img {
     width: 1.25rem;
     height: 1.25rem;
     border-radius: 50%;
