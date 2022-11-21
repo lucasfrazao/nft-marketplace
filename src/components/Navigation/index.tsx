@@ -1,3 +1,5 @@
+import { User } from 'phosphor-react'
+import { Button } from '../Button'
 import { Container } from './styles'
 
 export function Navigation() {
@@ -9,7 +11,10 @@ export function Navigation() {
         <a href="">Marketplace</a>
         <a href="">Rankings</a>
         <a href="">Connect a wallet</a>
-        <a href="">Sign Up</a>
+        <Button size="medium" variant="contained">
+          <User size={20} />
+          Sign Up
+        </Button>
       </div>
     </Container>
   )
