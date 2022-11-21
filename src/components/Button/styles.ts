@@ -23,9 +23,12 @@ export const Container = styled.button<ButtonProps>`
 
   font-weight: 600;
   font-family: 'Work Sans';
+  color: var(--white);
 
   gap: 0.625rem;
   border-radius: 0.625rem;
+
+  max-width: 12.875rem;
 
   :hover {
     cursor: pointer;

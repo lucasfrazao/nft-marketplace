@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 
 import { Navigation } from '../Navigation'
-import { Container } from './styles'
+import { Container, Main } from './styles'
 
 interface PageDefaultProps {
   children: ReactNode
@@ -11,7 +11,7 @@ export function PageDefault({ children }: PageDefaultProps) {
   return (
     <Container>
       <Navigation />
-      {children}
+      <Main>{children}</Main>
     </Container>
   )
 }
