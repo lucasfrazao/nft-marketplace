@@ -3,16 +3,18 @@ import { CardCollection } from '../../components/CardCollection'
 import { HeroSection } from '../../components/HeroSection'
 import { PageDefault } from '../../components/PageDefault'
 
-import { RocketLaunch } from 'phosphor-react'
+import { RocketLaunch, Eye } from 'phosphor-react'
 
 import {
   Container,
   TrendingCollection,
   TopCreators,
-  BrowseCategories
+  BrowseCategories,
+  DiscoverNfts
 } from './styles'
 import { CardArtists } from '../../components/CardArtists'
 import { CardCategories } from '../../components/CardCategories'
+import { CardNft } from '../../components/CardNft'
 
 export function Home() {
   const data = {
@@ -95,6 +97,25 @@ export function Home() {
             <CardCategories />
           </div>
         </BrowseCategories>
+
+        <DiscoverNfts>
+          <header>
+            <div className="text">
+              <h2>Top creators</h2>
+              <span>Checkout Top Rated Creators on the NFT Marketplace</span>
+            </div>
+
+            <Button size="large" variant="outlined">
+              <Eye size={20} /> See All
+            </Button>
+          </header>
+
+          <div className="items-nft">
+            <CardNft />
+            <CardNft />
+            <CardNft />
+          </div>
+        </DiscoverNfts>
       </Container>
     </PageDefault>
   )

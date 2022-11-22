@@ -59,3 +59,21 @@ export const BrowseCategories = styled.div`
     margin: 60px 0 80px;
   }
 `
+
+export const DiscoverNfts = styled.div`
+  margin: 5rem 0 3.75rem;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .items-nft {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 60px;
+  }
+`
