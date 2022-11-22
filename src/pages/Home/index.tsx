@@ -5,8 +5,14 @@ import { PageDefault } from '../../components/PageDefault'
 
 import { RocketLaunch } from 'phosphor-react'
 
-import { Container, TrendingCollection, TopCreators } from './styles'
+import {
+  Container,
+  TrendingCollection,
+  TopCreators,
+  BrowseCategories
+} from './styles'
 import { CardArtists } from '../../components/CardArtists'
+import { CardCategories } from '../../components/CardCategories'
 
 export function Home() {
   const data = {
@@ -74,6 +80,21 @@ export function Home() {
             <CardArtists />
           </div>
         </TopCreators>
+
+        <BrowseCategories>
+          <h2>Browse Categories</h2>
+
+          <div className="categories">
+            <CardCategories />
+            <CardCategories />
+            <CardCategories />
+            <CardCategories />
+            <CardCategories />
+            <CardCategories />
+            <CardCategories />
+            <CardCategories />
+          </div>
+        </BrowseCategories>
       </Container>
     </PageDefault>
   )
