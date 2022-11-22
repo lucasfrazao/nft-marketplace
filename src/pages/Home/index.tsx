@@ -1,9 +1,13 @@
+import { RocketLaunch, Eye } from 'phosphor-react'
+
 import { Button } from '../../components/Button'
 import { CardCollection } from '../../components/CardCollection'
 import { HeroSection } from '../../components/HeroSection'
 import { PageDefault } from '../../components/PageDefault'
 
-import { RocketLaunch, Eye } from 'phosphor-react'
+import { CardArtists } from '../../components/CardArtists'
+import { CardCategories } from '../../components/CardCategories'
+import { CardNft } from '../../components/CardNft'
 
 import {
   Container,
@@ -12,9 +16,8 @@ import {
   BrowseCategories,
   DiscoverNfts
 } from './styles'
-import { CardArtists } from '../../components/CardArtists'
-import { CardCategories } from '../../components/CardCategories'
-import { CardNft } from '../../components/CardNft'
+
+import { artists } from '../../data/artists'
 
 export function Home() {
   const data = {
@@ -27,6 +30,8 @@ export function Home() {
     totalNft: 1025,
     nameCollection: 'Space Walking'
   }
+
+  console.log(artists)
 
   return (
     <PageDefault>
