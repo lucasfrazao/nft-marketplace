@@ -5,7 +5,10 @@ import { Container } from './styles'
 export function Navigation() {
   return (
     <Container>
-      <img src="/src/assets/logo.svg" alt="logo nft marketplace" />
+      <div className="logo">
+        <img src="/src/assets/favicon.svg" alt="logo nft marketplace" />
+        <span>NFT Marketplace</span>
+      </div>
 
       <div className="options">
         <a href="">Marketplace</a>
