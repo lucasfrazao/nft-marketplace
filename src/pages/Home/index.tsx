@@ -18,6 +18,7 @@ import {
 } from './styles'
 
 import { artists } from '../../data/artists'
+import { ArtistProps } from '../../utils/interfaces'
 
 export function Home() {
   const data = {
@@ -77,14 +78,16 @@ export function Home() {
           </header>
 
           <div className="artists-cards">
-            <CardArtists />
-            <CardArtists />
-            <CardArtists />
-            <CardArtists />
-            <CardArtists />
-            <CardArtists />
-            <CardArtists />
-            <CardArtists />
+            {artists
+              .filter(artist => artist.ranking < 9)
+              .map(artist => (
+                <CardArtists
+                  ranking={artist.ranking}
+                  avatarUrl={artist.avatarUrl}
+                  name={artist.name}
+                  totalSales={artist.totalSales}
+                />
+              ))}
           </div>
         </TopCreators>
 

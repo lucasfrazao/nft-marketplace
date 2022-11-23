@@ -1,19 +1,28 @@
 import { Container } from './styles'
 
-export function CardArtists() {
+interface CardArtistsProps {
+  ranking: number
+  name: string
+  avatarUrl: string
+  totalSales: number
+}
+
+export function CardArtists({
+  ranking,
+  name,
+  avatarUrl,
+  totalSales
+}: CardArtistsProps) {
   return (
     <Container>
       <div>
-        <span className="rank-artist">1</span>
-        <img
-          src="https://wallpapers.com/images/hd/cool-profile-picture-paper-bag-head-4co57dtwk64fb7lv.jpg"
-          alt="avatar"
-        />
+        <span className="rank-artist">{ranking}</span>
+        <img src={avatarUrl} alt="avatar" />
       </div>
-      <span className="name">Keepitreal</span>
+      <span className="name">{name}</span>
       <div className="value-sale">
         <span>Total Sales: </span>
-        <span className="value-total-sales">&nbsp;34.53 ETH</span>
+        <span className="value-total-sales">&nbsp; {totalSales} ETH</span>
       </div>
     </Container>
   )

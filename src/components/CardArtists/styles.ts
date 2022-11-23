@@ -27,7 +27,7 @@ export const Container = styled.div`
     width: 20px;
     height: 20px;
     position: absolute;
-    left: -36px;
+    left: -30px;
     top: -5px;
 
     border-radius: 50%;
@@ -36,6 +36,7 @@ export const Container = styled.div`
 
   img {
     width: 110px;
+    height: 110px;
     border-radius: 50%;
     margin-bottom: 20px;
   }

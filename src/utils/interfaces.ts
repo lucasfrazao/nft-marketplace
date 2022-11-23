@@ -2,6 +2,7 @@ export interface ArtistProps {
   id: number
   name: string
   avatar: string
+  avatarUrl: string
   totalSales: number
   ranking: number
 }
