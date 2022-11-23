@@ -110,8 +110,8 @@ export function Home() {
         <DiscoverNfts>
           <header>
             <div className="text">
-              <h2>Top creators</h2>
-              <span>Checkout Top Rated Creators on the NFT Marketplace</span>
+              <h2>Discover More NFTs</h2>
+              <span>Explore new trending NFTs</span>
             </div>
 
             <Button size="large" variant="outlined">
