@@ -19,6 +19,7 @@ import {
 
 import { artists } from '../../data/artists'
 import { ArtistProps } from '../../utils/interfaces'
+import { categories } from '../../data/categories'
 
 export function Home() {
   const data = {
@@ -82,6 +83,7 @@ export function Home() {
               .filter(artist => artist.ranking < 9)
               .map(artist => (
                 <CardArtists
+                  key={artist.id}
                   ranking={artist.ranking}
                   avatarUrl={artist.avatarUrl}
                   name={artist.name}
@@ -95,14 +97,13 @@ export function Home() {
           <h2>Browse Categories</h2>
 
           <div className="categories">
-            <CardCategories />
-            <CardCategories />
-            <CardCategories />
-            <CardCategories />
-            <CardCategories />
-            <CardCategories />
-            <CardCategories />
-            <CardCategories />
+            {categories.map(categorie => (
+              <CardCategories
+                key={categorie.id}
+                name={categorie.name}
+                image={categorie.image}
+              />
+            ))}
           </div>
         </BrowseCategories>
 

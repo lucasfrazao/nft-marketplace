@@ -1,25 +1,28 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+interface CardCategoriesProps {
+  image: string
+}
+
+export const Container = styled.div<CardCategoriesProps>`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  align-content: center;
+  justify-content: flex-end;
 
   width: 240px;
   height: 316px;
   border-radius: 0.675rem;
 
-  background-image: url('https://lh6.ggpht.com/HlgucZ0ylJAfZgusynnUwxNIgIp5htNhShF559x3dRXiuy_UdP3UQVLYW6c=s1200');
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(253, 69, 86, 0) 100%
+    ),
+    url(${props => props.image});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  svg {
-    color: var(--white);
-
-    margin-top: 70px;
-  }
 
   span {
     display: flex;

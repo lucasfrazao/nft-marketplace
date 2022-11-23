@@ -1,11 +1,14 @@
-import { PaintBrush } from 'phosphor-react'
 import { Container } from './styles'
 
-export function CardCategories() {
+interface CardCategoriesProps {
+  name: string
+  image: string
+}
+
+export function CardCategories({ image, name }: CardCategoriesProps) {
   return (
-    <Container>
-      <PaintBrush size={100} />
-      <span>Art</span>
+    <Container image={image}>
+      <span>{name}</span>
     </Container>
   )
 }

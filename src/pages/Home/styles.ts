@@ -36,7 +36,7 @@ export const TopCreators = styled.div`
   .artists-cards {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
 
     gap: 30px;
