@@ -1,4 +1,4 @@
-import { User } from 'phosphor-react'
+import { Storefront, User } from 'phosphor-react'
 import { Button } from '../Button'
 import { Container } from './styles'
 
@@ -6,7 +6,7 @@ export function Navigation() {
   return (
     <Container>
       <div className="logo">
-        <img src="/src/assets/favicon.svg" alt="logo nft marketplace" />
+        <Storefront size={40} />
         <span>NFT Marketplace</span>
       </div>
 

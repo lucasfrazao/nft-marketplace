@@ -19,6 +19,10 @@ export const Container = styled.nav`
 
     gap: 0.9rem;
 
+    > svg {
+      color: var(--purple);
+    }
+
     > span {
       font-family: 'Space Mono';
       font-weight: 600;
